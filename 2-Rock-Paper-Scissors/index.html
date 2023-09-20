@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div >
+        <div class="ui">
+            <p id="turn">Turn 1</p>
+        </div>
+        <div class="ui">
+            <p id="totalScore1">Total Score: 0</p>
+            <p id="totalScore2">Total Score: 0</p>
+        </div>
+        <div class="ui">
+            <p id="score1">Score: 0</p>
+            <p id="score2">Score: 0</p>
+        </div>
+        <div class="ui">
+            <p>You: </p>
+            <p>Rival: </p>
+        </div>
+        
+        <div class="ui">
+            <p id="player"></p>
+            <p id="rival"></p>
+        </div>
+    </div>
+    <div class="options">
+        <button id="rock" value="rock" onclick="selectOption(this.value)">Rock</button>
+        <button id="paper" value="paper" onclick="selectOption(this.value)">Paper</button>
+        <button id="scissor" value="scissors" onclick="selectOption(this.value)">Scissors</button>    
+    </div>
+    <div>
+        <div class="ui">
+            <p id="result"></p>
+        </div>
+        <div class="ui">
+            <button id="restart" onclick="restart()">Restart</button>
+        </div>
+    </div>
+    <div id="rules">
+        <p>Rules:
+            <br> if you choose one option gives you points. 
+            <br> Rock: 1 point. 
+            <br> Paper: 2 points.
+            <br> Scissors: 3 points.
+        </p>
+        <p>If you win gives you 6 points, if you draw gives you 3 points, if you lose 0 points.</p>
+        <p>The game ends with 3 turns.</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
